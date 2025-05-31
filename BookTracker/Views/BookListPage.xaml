@@ -26,14 +26,12 @@
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
 
-                            <!-- Datos del libro -->
                             <StackLayout Grid.Row="0" Grid.Column="0">
                                 <Label Text="{Binding Title}" FontSize="18" FontAttributes="Bold" />
                                 <Label Text="{Binding Author}" FontSize="14" TextColor="Gray" />
                                 <Label Text="{Binding Status}" FontSize="14" />
                             </StackLayout>
 
-                            <!-- Botón Eliminar -->
                             <Button
                         Grid.Row="0"
                         Grid.Column="1"

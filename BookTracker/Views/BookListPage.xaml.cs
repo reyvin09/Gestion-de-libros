@@ -25,7 +25,6 @@ public partial class BookListPage : ContentPage
 
     private async void OnAddClicked(object sender, EventArgs e)
     {
-        // Navegar al formulario vacío para crear nuevo libro
         await Navigation.PushAsync(new BookFormPage());
     }
 

@@ -472,3 +472,4 @@ C:\Users\ASUS\Downloads\BookTracker\BookTracker\obj\Debug\net9.0-windows10.0.190
 C:\Users\ASUS\Downloads\BookTracker\BookTracker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\ASUS\Downloads\BookTracker\BookTracker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\ASUS\Downloads\BookTracker\BookTracker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ASUS\Downloads\BookTracker\BookTracker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\BookTracker.sourcelink.json

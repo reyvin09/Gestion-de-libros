@@ -7,13 +7,13 @@ namespace BookTracker.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
-        [MaxLength(100)]  // Este es el de SQLite
+        [MaxLength(100)]  
         public string Title { get; set; }
 
         [MaxLength(100)]
         public string Author { get; set; }
 
-        public string Status { get; set; } // Leído, En lectura, Por leer
-        public int Rating { get; set; } // De 1 a 5
+        public string Status { get; set; } 
+        public int Rating { get; set; } 
     }
 }

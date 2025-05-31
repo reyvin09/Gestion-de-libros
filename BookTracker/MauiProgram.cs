@@ -24,7 +24,6 @@ namespace BookTracker
             // Registrar el servicio de base de datos como Singleton
             builder.Services.AddSingleton(new BookDatabase(dbPath));
 
-            // ⬇️ Registrar el ViewModel si lo vas a inyectar
             builder.Services.AddSingleton<DashboardViewModel>();
 
             return builder.Build();

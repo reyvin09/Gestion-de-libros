@@ -22,7 +22,7 @@ namespace BookTracker.ViewModels
             Books.Clear();
             var books = await _db.GetBooksAsync();
 
-            Console.WriteLine($"Cargando {books.Count} libros"); // 👈 esto te muestra cuántos se están cargando
+            Console.WriteLine($"Cargando {books.Count} libros");
 
             foreach (var book in books)
             {
