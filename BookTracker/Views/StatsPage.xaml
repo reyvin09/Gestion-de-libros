@@ -1,0 +1,35 @@
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:BookTracker.ViewModels"
+    x:Class="BookTracker.Views.StatsPage"
+    Title="Estadísticas">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Label Text="Resumen de Libros" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+                  ColumnDefinitions="*,Auto"
+                  Padding="10"
+                  BackgroundColor="#f2f2f2"
+                  ColumnSpacing="15"
+                  RowSpacing="15">
+
+                <Label Text="Total de libros:" Grid.Row="0" Grid.Column="0" />
+                <Label Text="{Binding TotalBooks}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Por leer:" Grid.Row="1" Grid.Column="0" />
+                <Label Text="{Binding ToReadCount}" FontAttributes="Bold" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="En lectura:" Grid.Row="2" Grid.Column="0" />
+                <Label Text="{Binding ReadingCount}" FontAttributes="Bold" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Leídos:" Grid.Row="3" Grid.Column="0" />
+                <Label Text="{Binding ReadCount}" FontAttributes="Bold" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

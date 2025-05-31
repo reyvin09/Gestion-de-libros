@@ -1,0 +1,32 @@
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:BookTracker.ViewModels"
+    x:Class="BookTracker.Views.BookFormPage"
+    Title="{Binding PageTitle}">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Label Text="Título" FontSize="16"/>
+            <Entry Text="{Binding Book.Title}" Placeholder="Título del libro"/>
+
+            <Label Text="Autor" FontSize="16"/>
+            <Entry Text="{Binding Book.Author}" Placeholder="Autor del libro"/>
+
+            <Label Text="Estado" FontSize="16"/>
+            <Picker Title="Selecciona estado" SelectedItem="{Binding Book.Status}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Por leer</x:String>
+                        <x:String>En lectura</x:String>
+                        <x:String>Leído</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Guardar" Command="{Binding SaveCommand}" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

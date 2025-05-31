@@ -1,0 +1,47 @@
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:BookTracker.ViewModels"
+    x:Class="BookTracker.Views.DashboardPage"
+    Title="Inicio">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="25">
+
+            <Label Text="Resumen de Lectura" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="20" RowSpacing="20">
+
+                <Frame BackgroundColor="#2196F3" CornerRadius="15" Padding="20" Grid.Row="0" Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Label Text="Total de libros" TextColor="White" FontSize="18"/>
+                        <Label Text="{Binding TotalBooks}" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#4CAF50" CornerRadius="15" Padding="20" Grid.Row="0" Grid.Column="1">
+                    <VerticalStackLayout>
+                        <Label Text="Leídos" TextColor="White" FontSize="18"/>
+                        <Label Text="{Binding ReadBooks}" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#FFC107" CornerRadius="15" Padding="20" Grid.Row="1" Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Label Text="En lectura" TextColor="White" FontSize="18"/>
+                        <Label Text="{Binding InProgressBooks}" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#FF5722" CornerRadius="15" Padding="20" Grid.Row="1" Grid.Column="1">
+                    <VerticalStackLayout>
+                        <Label Text="Por leer" TextColor="White" FontSize="18"/>
+                        <Label Text="{Binding ToReadBooks}" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </Grid>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
